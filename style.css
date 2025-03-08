@@ -1,0 +1,127 @@
+/* Reset di base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7; /* Colore di sfondo grigio chiaro */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #0d3b66; /* Blu scuro per l'header */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombra per l'header */
+}
+
+header h1 {
+    font-size: 3rem; /* Più grande e audace */
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f7f7f7;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #f1c40f; /* Colore oro al passaggio del mouse */
+    text-decoration: underline;
+    transform: translateY(-2px); /* Leggero movimento verso l'alto */
+}
+
+/* Sezione principale */
+main {
+    padding: 60px 10%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Ombra leggera */
+    margin-top: 30px;
+    text-align: center;
+}
+
+#contenuto h2 {
+    font-size: 2.5rem;
+    color: #0d3b66;
+    margin-bottom: 20px;
+}
+
+#contenuto p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#contenuto a {
+    color: #0d3b66;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+#contenuto a:hover {
+    color: #f1c40f;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #0d3b66;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 1rem;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1); /* Ombra sopra il footer */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    main {
+        padding: 40px 5%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 15px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    #contenuto h2 {
+        font-size: 2rem;
+    }
+}
