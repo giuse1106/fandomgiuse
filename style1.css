@@ -1,0 +1,75 @@
+/* Reset di base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stile del body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    text-align: center;
+}
+
+/* HEADER */
+header {
+    background-color: #007acc;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.menu-container {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+}
+
+.menu-container li {
+    display: inline-block;
+}
+
+.menu-container li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu-container li a:hover {
+    background-color: #005f99;
+}
+
+/* FORM */
+form {
+    max-width: 300px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #007acc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005f99;
+}
