@@ -8,16 +8,17 @@
 /* Body */
 body {
     font-family: Arial, sans-serif;
-    background-color: #121212;
+    background-color: #121212; /* Nero/grigio scuro per contrasto */
     color: #fff;
     line-height: 1.6;
+    font-size: 14px; /* Riduzione generale del testo */
 }
 
 /* Header fisso */
 header {
     background-color: #0a3d62; /* Blu scuro */
     color: white;
-    padding: 15px 0;
+    padding: 12px 0;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 162, 255, 0.4); /* Ombra azzurra */
     position: fixed;
@@ -29,22 +30,22 @@ header {
 
 /* Logo */
 #logo h1 {
-    font-size: 2.5rem;
+    font-size: 18px; /* Ridotto per sembrare un paragrafo */
     font-weight: bold;
     color: #00a2ff; /* Azzurro acceso */
-    text-shadow: 2px 2px 5px rgba(0, 162, 255, 0.6);
+    text-shadow: 1px 1px 3px rgba(0, 162, 255, 0.6);
 }
 
 /* Menu di navigazione */
 nav {
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .menu-container {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
 }
 
 .menu-container li {
@@ -54,9 +55,9 @@ nav {
 .menu-container li a {
     text-decoration: none;
     color: white;
-    font-size: 1.2rem;
+    font-size: 12px; /* Testo più piccolo */
     font-weight: bold;
-    padding: 10px 15px;
+    padding: 8px 12px;
     border-radius: 5px;
     transition: all 0.3s ease;
     background-color: rgba(255, 255, 255, 0.1); /* Sfondo leggero */
@@ -65,31 +66,32 @@ nav {
 .menu-container li a:hover {
     background-color: #00a2ff; /* Azzurro al passaggio */
     color: black;
-    box-shadow: 0 0 10px rgba(0, 162, 255, 0.8);
+    box-shadow: 0 0 8px rgba(0, 162, 255, 0.8);
 }
 
 /* Sezione principale */
 main {
-    padding: 120px 10%;
+    padding: 90px 8%;
     background-color: #1e272e; /* Grigio scuro */
     border-radius: 10px;
     box-shadow: 0 6px 20px rgba(0, 162, 255, 0.2);
-    margin: 120px auto 30px auto;
-    max-width: 900px;
+    margin: 80px auto 20px auto;
+    max-width: 800px;
     text-align: center;
 }
 
 /* Titoli e testo */
 #contenuto h2 {
-    font-size: 2.2rem;
+    font-size: 16px; /* Ora sembra un paragrafo */
+    font-weight: normal; /* Non più troppo grande */
     color: #00a2ff;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 #contenuto p {
-    font-size: 1.2rem;
+    font-size: 14px; /* Stessa dimensione del resto del testo */
     color: #ddd;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 #contenuto a {
@@ -97,6 +99,7 @@ main {
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
+    font-size: 14px;
 }
 
 #contenuto a:hover {
@@ -109,8 +112,8 @@ footer {
     background-color: #0a3d62;
     color: white;
     text-align: center;
-    padding: 15px;
-    font-size: 1rem;
+    padding: 12px;
+    font-size: 12px; /* Più piccolo per uniformità */
     box-shadow: 0 -4px 10px rgba(0, 162, 255, 0.3);
 }
 
@@ -119,19 +122,19 @@ footer {
     .menu-container {
         flex-wrap: nowrap; /* Forza il menu a restare orizzontale */
         justify-content: center;
-        gap: 10px;
+        gap: 8px;
     }
 
     .menu-container li a {
-        font-size: 1rem;
-        padding: 8px 12px;
+        font-size: 11px;
+        padding: 6px 10px;
     }
 
     header h1 {
-        font-size: 2rem;
+        font-size: 16px;
     }
 
     main {
-        padding: 80px 5%;
+        padding: 70px 5%;
     }
 }
