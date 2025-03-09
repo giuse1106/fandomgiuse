@@ -8,29 +8,30 @@
 /* Stile del body */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f8ff; /* Azzurro molto chiaro */
+    background-color: #f0f8ff; /* Azzurro chiaro */
     color: #333;
     line-height: 1.6;
 }
 
-/* Stile dell'header */
+/* HEADER */
 header {
-    background-color: #007acc; /* Azzurro intenso */
+    background-color: #007acc;
     color: white;
-    padding: 20px 0;
+    padding: 15px 0;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #logo h1 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
 }
 
+/* MENU */
 nav {
     margin-top: 10px;
 }
@@ -39,7 +40,9 @@ nav {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
+    flex-wrap: nowrap; /* Evita che i pulsanti vadano a capo */
+    padding: 0;
 }
 
 .menu-container li {
@@ -49,27 +52,28 @@ nav {
 .menu-container li a {
     text-decoration: none;
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
-    padding: 10px 15px;
+    padding: 8px 12px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .menu-container li a:hover {
-    background-color: #005f99; /* Azzurro scuro */
+    background-color: #005f99;
 }
 
-/* Stile del main */
+/* SEZIONE PRINCIPALE */
 main {
-    padding: 100px 20px 20px 20px;
-    margin: 0 auto;
+    padding: 100px 5%;
     max-width: 1200px;
+    margin: auto;
 }
 
-/* Sezione hero */
+/* HERO SECTION */
 #hero {
-    background-color: #e6f7ff; /* Azzurro molto chiaro */
+    background-color: #e6f7ff;
     padding: 60px 20px;
     text-align: center;
     border-radius: 10px;
@@ -78,24 +82,24 @@ main {
 }
 
 .hero-content h2 {
-    font-size: 32px;
+    font-size: 28px;
     color: #007acc;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .hero-content p {
-    font-size: 18px;
+    font-size: 16px;
     color: #555;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .cta-button {
     background-color: #007acc;
     color: white;
     text-decoration: none;
-    padding: 15px 30px;
+    padding: 12px 25px;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 16px;
     transition: background-color 0.3s ease;
 }
 
@@ -103,12 +107,12 @@ main {
     background-color: #005f99;
 }
 
-/* Sezione features */
+/* SEZIONE FEATURES */
 #features {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
     justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .feature {
@@ -121,54 +125,50 @@ main {
 }
 
 .feature h3 {
-    font-size: 24px;
+    font-size: 20px;
     color: #007acc;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .feature p {
-    font-size: 16px;
+    font-size: 14px;
     color: #555;
 }
 
-/* Stile del footer */
+/* FOOTER */
 footer {
     background-color: #007acc;
     color: white;
     text-align: center;
-    padding: 15px;
-    font-size: 14px;
+    padding: 12px;
+    font-size: 12px;
     position: fixed;
     width: 100%;
     bottom: 0;
 }
 
-/* Media queries per dispositivi mobili */
+/* RESPONSIVE */
 @media (max-width: 768px) {
     .menu-container {
-        flex-direction: column;
-        gap: 10px;
+        justify-content: center;
+        flex-wrap: nowrap; /* Forza il menu orizzontale */
     }
 
     .menu-container li a {
-        font-size: 14px;
-        padding: 8px 12px;
+        font-size: 12px;
+        padding: 6px 10px;
     }
 
     .hero-content h2 {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .hero-content p {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .cta-button {
-        font-size: 16px;
-        padding: 12px 25px;
-    }
-
-    #features {
-        flex-direction: column;
+        font-size: 14px;
+        padding: 10px 20px;
     }
 }
